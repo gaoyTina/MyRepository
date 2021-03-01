@@ -1,0 +1,148 @@
+/* pages/cookerview/cookerview.wxss */
+page{
+background-color: #bf0ff042;
+
+}
+.touxiang{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin-left: calc(50% - 100rpx);
+  margin-top: 100rpx;
+}
+.content{
+  background-color:rgba(255, 255, 255, 0.563);
+  width: 680rpx;
+  margin-left: calc(50% - 340rpx);
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+
+  padding-top: 30rpx;
+  border-radius: 15rpx;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.line{
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 100rpx;
+}
+.brief{
+  width: 500rpx;
+  word-wrap:break-word;
+  margin-left: 100rpx;
+}
+.comminput{
+  /* border: solid 1rpx red; */
+  height: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-top: 60rpx;
+  border-top: solid 1rpx #bf0ff051;
+}
+.comminput input{
+  width: 64%;
+  height: 50rpx;
+  float: left;
+  margin-left: 8%;
+  background-color: white;
+  border-top-left-radius:10rpx; 
+  border-bottom-left-radius:10rpx; 
+  padding-left: 2%;
+}
+.word{
+width: 18%;
+height: 50rpx;
+line-height: 50rpx;
+text-align: center;
+float: left;
+border-left: solid 1rpx #eee;
+background-color: white;
+border-top-right-radius:10rpx; 
+border-bottom-right-radius:10rpx;
+}
+.box{
+  width: 304rpx;
+  height: 100rpx;
+  margin-left: calc(50% - 150rpx);
+  margin-top: 10rpx;
+}
+.abox{
+  width: 100rpx;
+  float: left;
+  
+}
+.bbox{
+  border-right: solid 1rpx #eee;
+}
+.line1{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 22rpx;
+  text-align: center;
+  color: white;
+}
+.name{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-left: calc(50% - 100rpx);
+  color: white;
+}
+.intruduction{
+  /* background-color: firebrick; */
+}
+.commentbox{
+  width: 90%;
+  margin: auto;
+  border-top: solid 1rpx #bf0ff051;
+}
+.commentlist{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.leftbox{
+  background-color: red;
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  border-radius: 50rpx;
+}
+.leftbox image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.rightbox{
+  width: 75%;
+  float: left;
+  margin-left: 40rpx;
+  padding-bottom: 20rpx;
+  border-bottom: solid 1rpx #bf0ff051;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.top{
+
+  height: 40rpx;
+
+}
+.username{
+  color: rgb(32, 169, 223);
+  width: 30%;
+  float: left;
+}
+.time{
+  /* background-color: darkgoldenrod; */
+  width: 70%;
+  float: left;
+  text-align: right;
+}
+.bottom{
+  text-align: left;
+  width: 80%;
+  /* background-color: forestgreen; */
+  margin-top: 20rpx;
+  /* float: left; */
+}

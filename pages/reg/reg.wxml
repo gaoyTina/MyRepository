@@ -1,0 +1,37 @@
+<!--pages/login/login.wxml-->
+<view class="container"> 
+    <view class="login-icon"> 
+        <image class="login-img" src="/pages/img/mybj.png"></image> 
+    </view> 
+    <view class="title">欢迎注册！</view>
+    <view class="pic"><image class="login-img" src="/pages/img/login_logo.jpg"></image></view>
+    <!-- 表单开始 -->
+    <view class="reg-form">
+        <view class="box">
+        <view class="word"> 用户名：</view>
+        <input class="myinput" type="text" bindinput="fninputeditusername" placeholder="请输入用户名"/>
+        </view>
+        <view class="box">
+        <view class="word"> 密码：</view>
+        <input class="myinput" type="text" bindinput="fninputeditpassword" placeholder="请输入密码"/>
+        </view>
+        <view class="box">
+        <view class="word"> 确认密码：</view>
+        <input class="myinput" type="text" bindinput="fninputeditpassconfirm" placeholder="请输入密码"/>
+        </view>
+        <view class="box">
+        <view class="word"> 真实姓名：</view>
+        <input class="myinput" type="text" bindinput="fninputedittruename" placeholder="请输入姓名"/>
+        </view>
+        <view class="box">
+        <view class="word"> 手机号码：</view>
+        <input class="myinput" type="text" bindinput="fninputeditel" placeholder="请输入手机号"/>
+        </view>
+        <view class="word"> 收货地址：</view>
+        <textarea class="address" bindinput="fninputeditaddress" ></textarea>
+        <button class="regBtn" bindtap="fnreg">提交</button> 
+    </view>
+    <!-- 表单结束 -->
+</view>
+
+

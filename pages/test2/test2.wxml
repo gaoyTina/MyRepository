@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<image src="/pages/img/xin01.png" wx:if="{{ item.isShow }}" bindtap="clickselect" data-index="{{ index }}"></image>
+<image src="/pages/img/xin02.png" wx:else bindtap="clickselect" data-index="{{ index }}"></image>
+
+         
+  <!-- 收藏过 -->          
+  <!-- <image  catchtap='onCollectionTap' wx:if="{{item.collected==1}}" data-index='{{index}}' src="../../images/index/collection_hover.png" ></image>                 
+  <view class='wish_list_box_collection' wx:else>           -->
+  <!-- 未收藏 -->          
+  <!-- <image wx:else  catchtap='onCollectionTap' data-index='{{index}}' src='../../images/index/collection.png'></image>                 -->
+  

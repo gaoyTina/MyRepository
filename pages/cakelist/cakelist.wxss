@@ -1,0 +1,42 @@
+/* pages/cakelist/cakelist.wxss */
+
+@import '../index/index.wxss';
+
+page{
+  position: relative;
+}
+.pic{
+  width: 95%;
+  border-radius: 20rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+.tblable{
+  /* background-color: #bf0ff0; */
+  border: solid 1rpx #bf0ff0;
+  width: 70rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  border-radius: 5rpx;
+  color: #bf0ff0;
+  font-size: 27rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+.brief{
+  text-align: center;
+  margin-top: 10rpx;
+}
+.brief1{
+  color: #898989;
+  font-size: 22rpx;
+  font-weight: lighter;
+  margin-bottom: 10rpx;
+}
+swiper-item{
+  overflow: scroll;
+}
+.fooditem{
+  margin-left: 4.8%;
+}

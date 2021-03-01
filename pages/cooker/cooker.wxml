@@ -1,0 +1,34 @@
+<!--pages/foodlist/foodlist.wxml-->
+
+
+			<!-- 搜索框开始 -->
+      <view class="{{scrollTop>758 ? 'rel' : 'nav'}} searchbox">
+            <view class="myinput">
+            <image src="/pages/img/s3.png" mode="heightFix"/>
+            <input type="text" bindinput="fnsearchinputchange" placeholder="搜索食品名称" />
+            </view>
+      </view>
+      <!-- 搜索框结束 -->
+       <view class="background"></view>
+<view class="tbcontainer">
+	<image class="pic" src="{{gurl}}/static/uploadimg/index_tp.png" mode="widthFix"/>
+	<view class="foodbox">
+            <view class="foodlistbox">
+                    <block wx:for="{{cookerlist}}"  wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}" bindtap="fngotocookerview">
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.coname}}</view>
+                            <view class="brief brief1">{{item.colevel}}</view>
+                            <view class="foodprice"><view class="tblable">优选</view></view>
+                            <view class="foodadd">
+                            <image src="/pages/img/xin01.png" mode="heightFix"/>
+
+                            </view>
+                            
+                        </view>
+                    </block>
+
+            </view> 
+    </view>
+
+</view>

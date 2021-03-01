@@ -1,0 +1,154 @@
+/* pages/foodlist/foodlist.wxss */
+@import '../index/index.wxss';
+page{
+  position: relative;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+.searchbox{
+  width:calc(100% - 40rpx);
+  height:90rpx;
+  background-color:#F1F1F1;
+  margin:0 auto;
+  /* border-radius: 45rpx; */
+  position: relative;/*给图标的父容器加一个相对定位的属性，把他作为定位的参考对象。*/
+}
+
+/* .searchbox input{
+  height: 90rpx;
+  background-color: rosybrown;
+} */
+
+.searchbox image{
+  width: 50rpx;
+  position: absolute;
+  left:20rpx;
+  top:22rpx;
+}
+
+.listbox{
+  width: 95%;
+  margin: auto;
+  height:calc(100% - 90rpx);
+  overflow-y: scroll;
+}
+
+.fooditem{
+  width: 100%;
+  margin: auto;
+  height:260rpx;
+  /* border-bottom: solid 1rpx #F1F1F1; */
+  background-color: white;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.fooditem image{
+  width: 280rpx;
+  height: 220rpx;
+  margin: 20rpx;
+  margin-left: 30rpx;
+  border-radius: 20rpx;
+}
+.rightbox{
+  width:calc(100% - 400rpx);
+  height: 220rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.line1{
+  font-size: 32rpx;
+  /* font-weight: bold; */
+  padding-top: 10rpx;
+}
+.line2{
+  color: #898989;
+}
+
+.line3{
+  color: #ac0dd8;
+  line-height:70rpx;
+}
+
+.line4 text{
+  border:solid 1px #bf0ff09f;
+  color: #bf0ff0b9;
+  padding:2rpx 10rpx;
+  margin-right: 10rpx;
+}
+
+.itemhover{
+  background-color: #eee;
+}
+/* 搜索框 */
+.searchbox{
+  width:100%;
+  height:100rpx;
+  background-color: #ac0dd8;
+  border: none;
+  /* border-bottom: solid 1rpx #ac0dd8; */
+}
+
+.myinput{
+  background-color: white;
+  height: 60rpx;
+  width: 600rpx;
+  margin-top: 20rpx;
+  margin-left: calc(50% - 300rpx);
+  border-radius: 30rpx;
+  position: relative;
+}
+/* .searchbox input{
+
+  height: 60rpx;
+  width: 500rpx;
+  float: left;
+  text-align: center;
+  position: absolute;
+  right: 40rpx;
+  overflow: hidden;
+} */
+.myinput image{
+height: 50rpx;
+float: left;
+position: absolute;
+left: 20rpx;
+top: 5rpx;
+}
+.searchbox input{
+  height: 60rpx;
+  width: 500rpx;
+  float: left;
+  text-align: center;
+  position: absolute;
+  right: 40rpx;
+  overflow: hidden;
+}
+.nav{
+  position: fixed;
+  top:0px;
+  z-index:999;
+  border-bottom: solid 5rpx #ac0dd8;
+}
+.container{
+  height: 100%;
+  margin-top: 110rpx;
+  background-color: rgba(247, 246, 246, 0.995);
+  border-top-left-radius:60rpx;
+  border-top-right-radius:60rpx; 
+  padding-bottom: 30rpx;
+
+}
+.pic{
+  width: 95%;
+  border-radius: 20rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}

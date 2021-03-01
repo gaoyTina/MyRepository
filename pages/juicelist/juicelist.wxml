@@ -1,0 +1,51 @@
+<!--pages/cakelist/cakelist.wxml-->
+ <!-- 搜索框开始 -->
+      <view class="{{scrollTop>758 ? 'rel' : 'nav'}} searchbox">
+            <view class="myinput">
+            <image src="/pages/img/s3.png" mode="heightFix"/>
+            <input type="text" bindinput="fnsearchinputchange" placeholder="搜索食品名称" />
+            </view>
+      </view>
+      <!-- 搜索框结束 -->
+   <view class="background"></view>
+  <view class="tbcontainer">
+	<image class="pic" src="{{gurl}}/static/uploadimg/index_tp.png" mode="widthFix"/>
+
+<!-- 列表 -->
+                <view class="foodbox">
+                      <view class="foodlistbox">
+                      <block wx:for="{{cakelist}}"  wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}" bindtap="fngotofoodview">
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.proname}}</view>
+                            <view class="brief brief1">季售108  30分钟  配送</view>
+                            <view class="foodprice">￥{{item.price}}.00</view>
+                            <view class="foodadd" catchtap="touchOnGoods" wx:key="keys" hover-class="goods_hover" data-idx="{{index}}" style="position:relative">
+                            <image src="/pages/img/index_jh.png"  mode="heightFix"/>
+                            </view>
+                        </view>
+                    </block>
+
+                    <!-- <block wx:for="{{cookerlist}}"  wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}" bindtap="fngotocookerview">
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.coname}}</view>
+                            <view class="brief brief1">{{item.colevel}}</view>
+                            <view class="foodprice"><view class="tblable">优选</view></view>
+                            <view class="foodadd"><image src="/pages/img/xin01.png"  mode="heightFix"/></view>
+                        </view>
+                    </block> -->
+
+
+                        <!-- 购物车图标 和 角标数字-->
+                        <view class="bus">
+                            <image src="/pages/img/shopCart.png"></image>
+                            <view class="count" hidden="{{hideCount}}">{{count}}</view>
+                        </view>
+                        <!-- 加购物车时飞的图片 -->
+                        <view class="good_box" hidden="{{hide_good_box}}"  style="left: {{bus_x}}px; top: {{bus_y}}px;">
+                            <image class="pic" src="{{gurl}}/static/uploadimg/ball.jpg"/>
+                        </view>
+                    </view> 
+                </view>
+  </view>

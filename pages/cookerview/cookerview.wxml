@@ -1,0 +1,48 @@
+<!--pages/cookerview/cookerview.wxml-->
+
+<image class="touxiang" src="{{imgurl}}" mode="scaleToFill"/>
+<view class="name">{{coname}}</view>
+<view class="box">
+  <view class="abox bbox">
+    <view class="line1">655</view>
+    <view class="line1">浏览</view>
+  </view>
+  <view class="abox bbox">
+    <view class="line1">121</view>
+    <view class="line1">获赞</view>
+  </view>
+  <view class="abox">
+    <view class="line1">676</view>
+    <view class="line1">积分</view>
+  </view>
+</view>
+
+<view class="content">
+  <view class="intruduction">
+    <view class="line">姓名：{{coname}}</view>
+    <view class="line">性别：{{sex}}</view>
+    <view class="line">年龄：{{age}}</view>
+    <view class="line">厨师级别：{{colevel}}</view>
+    <view class="line">简介：</view>
+    <view class="brief">{{brief}}</view> 
+    <!-- <view class="brief">带我即完成iIE减肥茶见覅几份文件v 我吃完就非常的你进的回复此外回复画好看</view>  -->
+    <view class="comminput">
+          <input type="text" bindinput="fngetcomment" value="{{comment}}" placeholder="说点什么……" ></input>
+          <view class="word" bindtap="fnconmment">评论</view>
+    </view>
+  </view>
+  <view class="commentbox">
+    <block wx:for="{{commentlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+      <view class="commentlist">
+          <view class="leftbox"><image src="/pages/img/my_09.png" /></view>
+          <view class="rightbox">
+              <view class="top">
+                  <view class="username">{{item.username}}</view>
+                  <view class="time">{{item.comtime}}</view>
+              </view>
+              <view class="bottom">{{item.kcomment}}</view>
+          </view>
+      </view>
+    </block>
+  </view>
+</view>

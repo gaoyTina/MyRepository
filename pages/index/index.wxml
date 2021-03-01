@@ -1,0 +1,156 @@
+<!--index.wxml-->
+
+      <!-- 搜索框开始 -->
+      <view class="{{scrollTop>758 ? 'rel' : 'nav'}} searchbox">
+            <view class="myinput">
+            <image src="/pages/img/s3.png" mode="heightFix"/>
+            <input type="text" bindinput="fnsearchinputchange" placeholder="搜索食品名称" />
+            </view>
+      </view>
+      <!-- 搜索框结束 -->
+      <view class="background"></view>
+<view class="tbcontainer">
+    <!-- 轮播模块开始 -->
+      <view class="ppt">
+        <view class="page-section page-section-spacing swiper">
+          <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+            <block wx:for="{{pptlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+              <swiper-item >
+                <view class="swiper-item"><image src="{{gurl}}/static/uploadimg/{{item.ppt}}" mode="widthFix"/></view>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    <!-- 轮播模块结束 -->
+
+    <!-- 导航开始 -->
+    <view class="iconbox">
+      <view class="xbox" bindtap="fngotocookerlist"><image src="/pages/img/index_cs.png" mode="widthFix"/><view class="word">名厨</view></view>
+      <view class="xbox" bindtap="fngotocakelist"><image src="/pages/img/index_dg.png" mode="widthFix"/><view class="word">蛋糕</view></view>
+      <view class="xbox" bindtap="fngotojuicelist"><image src="/pages/img/index_gz.png" mode="widthFix"/><view class="word">果汁</view></view>
+      <view class="xbox" bindtap="fngotocoffeelist"><image src="/pages/img/index_kf.png" mode="widthFix"/><view class="word">咖啡</view></view>
+    </view>
+    <!-- 导航结束 -->
+
+    <image class="pic" src="{{gurl}}/static/uploadimg/index_tp.png" mode="widthFix"/>
+
+
+                        <!-- 购物车图标 和 角标数字-->
+                        <view class="bus" bindtap="fngotoshopcar">
+                            <image src="/pages/img/shopCart.png"></image>
+                            <view class="count" hidden="{{hideCount}}">{{count}}</view>
+                        </view>
+                        <!-- 加购物车时飞的图片 -->
+                        <view class="good_box" hidden="{{hide_good_box}}"  style="left: {{bus_x}}px; top: {{bus_y}}px;">
+                            <image class="pic" src="{{gurl}}/static/uploadimg/ball.jpg"/>
+                        </view>
+
+<view class="option">
+    <view class='topTabSwiper'>
+      <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>推荐</view>
+      <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>蛋糕</view>
+      <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>咖啡</view>
+      <view class='tab  {{currentData == 3 ? "tabBorer" : ""}}' data-current="3" bindtap='checkCurrent'>冰淇淋</view>
+    </view>
+    <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <view class='swiper_con'>
+<!-- 优选名厨开始 -->
+              <view class="cookerbox">
+                  <view class="title"> 优选名厨</view>
+                  <view class="cookerlistbox">
+                    <block wx:for="{{cookerlist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+                      <view class="cookeritem" data-id="{{item.id}}" data-cookername="{{item.coname}}" bindtap="fngotocookerview">
+                          <image class="a1" src="{{gurl}}/static/uploadimg/{{item.imgurl}}" />
+                          <view class="text">{{item.coname}}</view>
+                          <view class="a2">{{item.colevel}}</view>
+                      </view>
+                    </block> 
+                  </view>
+              </view>
+
+ <!-- 美味甜点开始 -->
+              <view class="foodbox">
+                  <view class="title"> 美味甜点</view>
+                    <view class="foodlistbox">
+                      <block wx:for="{{foodlist0}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}"  data-foodname="回锅肉" bindtap="fngotofoodview" >
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.brief}}</view>
+                            <view class="foodprice">￥{{item.price}}.00</view>
+                            <view class="foodadd" catchtap="touchOnGoods" wx:key="keys" hover-class="goods_hover" data-idx="{{index}}" data-id="{{item.id}}" style="position:relative">
+                            <image src="/pages/img/index_jh.png"  mode="heightFix"/>
+                            </view>
+                        </view>
+                      </block>
+                    </view>
+                  </view>
+              </view>
+      </swiper-item>
+      <!-- 蛋糕开始 -->
+      <swiper-item>
+        <view class='swiper_con'>
+            <view class="foodbox">
+                      <view class="foodlistbox">
+                        <block wx:for="{{typelist1}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}"  data-foodname="回锅肉" bindtap="fngotofoodview" >
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.brief}}</view>
+                            <view class="foodprice">￥{{item.price}}.00</view>
+                            <view class="foodadd" catchtap="touchOnGoods" wx:key="keys" hover-class="goods_hover" data-idx="{{index}}" style="position:relative">
+                            <image src="/pages/img/index_jh.png"  mode="heightFix"/>
+                            </view>
+                        </view>
+                        </block>
+                    </view> 
+                </view>
+        </view>
+      </swiper-item>
+      <!-- 蛋糕结束 -->
+
+      <!-- 咖啡开始 -->
+      <swiper-item>
+        <view class='swiper_con'>
+                <view class="foodbox">
+                      <view class="foodlistbox">
+                        <block wx:for="{{typelist2}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}"  data-foodname="回锅肉" bindtap="fngotofoodview" >
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.brief}}</view>
+                            <view class="foodprice">￥{{item.price}}.00</view>
+                            <view class="foodadd" catchtap="touchOnGoods" wx:key="keys" hover-class="goods_hover" data-idx="{{index}}" style="position:relative">
+                            <image src="/pages/img/index_jh.png"  mode="heightFix"/>
+                            </view>
+                        </view>
+                        </block>
+                    </view> 
+                </view>        
+        </view>
+      </swiper-item>
+      <!-- 咖啡结束 -->
+
+      <!-- 冰淇淋开始 -->
+      <swiper-item>
+        <view class='swiper_con'>
+        <view class="foodbox">
+                      <view class="foodlistbox">
+                        <block wx:for="{{typelist3}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+                        <view class="fooditem" data-id="{{item.id}}"  data-foodname="回锅肉" bindtap="fngotofoodview" >
+                            <image src="{{gurl}}/static/uploadimg/{{item.imgurl}}" mode="scaleToFill"/>
+                            <view class="brief">{{item.brief}}</view>
+                            <view class="foodprice">￥{{item.price}}.00</view>
+                            <view class="foodadd" catchtap="touchOnGoods" wx:key="keys" hover-class="goods_hover" data-idx="{{index}}" style="position:relative">
+                            <image src="/pages/img/index_jh.png"  mode="heightFix"/>
+                            </view>
+                        </view>
+                        </block>
+                    </view> 
+                </view>
+        </view>
+      </swiper-item>
+      <!-- 冰淇淋结束 -->
+ 
+      </swiper>
+    </view>
+</view>

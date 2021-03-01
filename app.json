@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cooker/cooker",
+    "pages/test2/test2",
+    
+    "pages/test3/test3",
+    
+    "pages/juicelist/juicelist",
+    "pages/cakelist/cakelist",
+    "pages/login/login",
+    "pages/cookerview/cookerview",
+    "pages/shopcar/shopcar",
+    "pages/foodview/foodview",
+   
+    "pages/reg/reg",
+    "pages/foodlist/foodlist",
+    "pages/my/my",
+    "pages/myorder/myorder",
+    "pages/tabs/tabs",
+    "pages/feedback/feedback",
+    "pages/test/test",
+    "pages/logs/logs",
+    "pages/coffeelist/coffeelist"
+  ],
+  "tabBar": {
+    "selectedColor": "#bf0ff0",
+    "list": [
+      {
+        "selectedIconPath": "pages/img/tab1-b.png",
+        "iconPath": "pages/img/tab1-a.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/img/tab2-b.png",
+        "iconPath": "pages/img/tab2-a.png",
+        "pagePath": "pages/foodlist/foodlist",
+        "text": "菜品"
+      },
+      {
+        "selectedIconPath": "pages/img/tab3-b.png",
+        "iconPath": "pages/img/tab3-a.png",
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "pages/img/tab4-b.png",
+        "iconPath": "pages/img/tab4-a.png",
+        "pagePath": "pages/my/my",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,125 @@
+/* pages/my/my.wxss */
+page{
+  background-color: rgba(238, 238, 238, 0.556);
+  position: relative;
+}
+#topbox{
+  height: 350rpx;
+  position: relative;
+  background-color: rgba(116, 6, 170, 0.755);
+}
+
+.pic{
+  width:160rpx;
+  height: 160rpx;
+  position: absolute;
+  right:calc(50% - 80rpx);
+  top:80rpx;
+  background-color: white;
+  border-radius: 80rpx;
+}
+.pic image{
+  width:160rpx;
+  height: 160rpx;
+  /* position: absolute;
+  right:calc(50% - 80rpx); */
+  top:80rpx;
+  border-radius: 80rpx;
+}
+.name{
+  /* background-color: yellow; */
+  width: 160rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  position: absolute;
+  top: 260rpx;
+  left: calc(50% - 80rpx);
+  color: white;
+}
+
+.box{
+  /* background-color: yellow; */
+  width: 700rpx;
+  position: absolute;
+  top: 350rpx;
+  left: calc(50% - 350rpx);
+  font-size: smaller;
+}
+.box1{
+background-color: white;
+width: 700rpx;
+height: 150rpx;
+border-radius: 10rpx;
+font-size: 22rpx;
+}
+.xbox{
+  width: 175rpx;
+  height: 150rpx;
+  float: left;
+}
+.xbox image{
+  width: 40rpx;
+  margin-left: calc(50% - 20rpx);
+  margin-top: 30rpx;
+}
+.word{
+  text-align: center;
+  margin-top: 10rpx;
+}
+.box2{
+  width: 700rpx;
+  height: 80rpx;
+  background-color: white;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+
+}
+.box3{
+  width: 700rpx;
+  height: 161rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+
+}
+.line{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 15rpx;
+}
+.line2{
+  border-bottom: solid 1rpx #eee;
+}
+.box4{
+  width: 700rpx;
+  height: 242rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+ 
+ 
+}
+.box5{
+  width: 700rpx;
+  height: 100rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+  border-radius: 10rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: red;
+}
+.rpic{
+  height: 80rpx;
+  float: right;
+  margin-right: 40rpx;
+}
+.aa{
+  float:left;
+  width:40rpx;
+  margin:20rpx 40rpx;
+  margin-right:20rpx;
+}

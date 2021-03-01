@@ -1,0 +1,26 @@
+<!--pages/my/my.wxml-->
+<view id="topbox">
+   <image style="width:100%;" src="/pages/img/mybj.png" mode="widthFix"/>
+   <view class="pic"><image src="/pages/img/my_09.png" mode="widthFix"/></view>
+   <view class="name">{{username}}</view>
+</view>
+
+<view class="box">
+   <view class="box1">
+      <view class="xbox" bindtap="fngotomyorder"><image src="/pages/img/my_dd.png" mode="widthFix"/><view class="word">全部订单</view></view>
+      <view class="xbox" bindtap="fngotoshopcar"><image src="/pages/img/my_dfk.png" mode="widthFix"/><view class="word">待付款</view></view>
+      <view class="xbox"><image src="/pages/img/my_dsh.png" mode="widthFix"/><view class="word">待收货</view></view>
+      <view class="xbox"><image src="/pages/img/my_ywc.png" mode="widthFix"/><view class="word">待完成</view></view>
+   </view>
+   <view class="box2"><image class="aa" src="/pages/img/my_packet.png" mode="widthFix"/>我的钱包<image class="rpic" src="/pages/img/my02_19.png" mode="heightFix"/></view>
+   <view class="box3">
+      <view class="line line2"><image class="aa" src="/pages/img/my_gz.png" mode="widthFix"/>我的关注<image class="rpic" src="/pages/img/my02_19.png" mode="heightFix"/></view>
+      <view class="line"><image class="aa" src="/pages/img/my_zj.png" mode="widthFix"/>我的足迹<image class="rpic" src="/pages/img/my02_19.png" mode="heightFix"/></view>
+   </view>
+   <view class="box4">
+      <view class="line line2"><image class="aa" src="/pages/img/my_sz.png" mode="widthFix"/>个人设置<image class="rpic" src="/pages/img/my02_19.png" mode="heightFix"/></view>
+      <view class="line line2"><image class="aa" src="/pages/img/my_kf.png" mode="widthFix"/>在线客服<image class="rpic" src="/pages/img/my02_19.png" mode="heightFix"/></view>
+      <view class="line" bindtap="fngotofeedback"><image class="aa" src="/pages/img/my_fk.png" mode="widthFix"/>意见反馈<image class="rpic" src="/pages/img/my02_19.png" mode="heightFix"/></view>
+   </view>
+   <view class="box5" bindtap="fnloginout">退出登录</view>
+</view>

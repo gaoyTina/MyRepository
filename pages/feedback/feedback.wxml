@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="container"> 
+    <view class="login-icon"> 
+        <image class="login-img" src="/pages/img/mybj.png"></image> 
+    </view> 
+    <view class="title">意见反馈</view>
+    <view class="pic"><image class="login-img" src="/pages/img/my_09.png"></image></view>
+    <view class="form">
+    <textarea class="feeedback" placeholder="请提出您的宝贵意见……" bindinput="fninputeditfeedback"></textarea>
+    <button class="submit" bindtap="fnfeedback">提交</button>
+    </view>
+</view>
+
+
